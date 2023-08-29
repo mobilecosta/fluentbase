@@ -1,0 +1,26 @@
+<po-page-detail
+  (p-back)="back()"
+  (p-remove)="remove()"
+  (p-edit)="edit()"
+  p-title="Detalhes do Titulo a Receber">
+
+  <po-divider p-label="Dados do Titulo"></po-divider>
+
+  <div class="po-row">
+    <po-info class="po-md-5"
+      p-label="Titulo"
+      [p-value]="receber.an_codtit">
+    </po-info>
+
+    <po-info class="po-md-5"
+      p-label="Parcela"
+      [p-value]="receber.an_parce">
+    </po-info>
+
+    <po-info class="po-md-5"
+      p-label="Cliente"
+      [p-value]="receber.a1_codcli">
+    </po-info>
+  </div>
+
+</po-page-detail>

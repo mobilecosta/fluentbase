@@ -1,0 +1,33 @@
+<po-page-edit
+  (p-save)="save()"
+  (p-cancel)="cancel()"
+  [p-title]="title"
+  [p-disable-submit]="formReceber.invalid">
+
+  <form #formReceber="ngForm">
+
+    <po-divider class="po-sm-12" p-label="Dados do Titulo"></po-divider>
+
+    <po-input class="po-md-5"
+      name="an_codtit"
+      [(ngModel)]="receber.an_codtit"
+      p-label="Titulo"
+      [p-disabled]="true">
+    </po-input>
+
+    <po-input class="po-md-5"
+      name="an_parce"
+      [(ngModel)]="receber.an_parce"
+      p-label="Parcela"
+      [p-disabled]="true">
+    </po-input>
+
+    <po-input class="po-md-5"
+      name="sfj_nome"
+      [(ngModel)]="receber.a1_codcli"
+      p-required
+      p-label="Cliente">
+    </po-input>
+  </form>
+
+</po-page-edit>
